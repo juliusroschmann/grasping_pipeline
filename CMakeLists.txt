@@ -6,14 +6,14 @@ genmsg
 rospy
 actionlib_msgs
 geometry_msgs
-hsrb_interface_py
+#hsrb_interface_py
 haf_grasping
 sensor_msgs
-handover
+#handover
 object_detector_msgs
 vision_msgs
-table_plane_extractor
-placement
+#table_plane_extractor
+#placement
 v4r_util
 )
 

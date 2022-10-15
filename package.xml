@@ -11,13 +11,13 @@
   <depend>actionlib</depend>
   <depend>actionlib_msgs</depend>
   <depend>geometry_msgs</depend>
-  <depend>hsrb_interface_py</depend>
+<!--  <depend>hsrb_interface_py</depend> -->
   <depend>haf_grasping</depend>
   <depend>sensor_msgs</depend>
   <depend>vision_msgs</depend>
-  <depend>table_plane_extractor</depend>
-  <depend>handover</depend>
-  <depend>placement</depend>
+<!--  <depend>table_plane_extractor</depend> -->
+<!--  <depend>handover</depend> -->
+<!--  <depend>placement</depend> -->
   <depend>v4r_util</depend>
   <depend>object_detector_msgs</depend>
   <build_depend>message_generation</build_depend>

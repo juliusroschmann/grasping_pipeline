@@ -1,7 +1,8 @@
 #!/bin/bash
 
 SESSION=VEREFINE
-WS_PATH=~/demos
+#WS_PATH=~/demos
+WS_PATH=~/catkin_ws
 
 tmux -2 new-session -d -s $SESSION
 tmux set -g mouse on
@@ -17,7 +18,7 @@ tmux send-keys "source $WS_PATH/devel/setup.bash" C-m
 tmux select-pane -t 1
 tmux send-keys "source $WS_PATH/devel/setup.bash" C-m
 tmux select-pane -t 0
-tmux send-keys "roslaunch hsrb_moveit_config move_group.launch"
+#tmux send-keys "roslaunch hsrb_moveit_config move_group.launch"
 tmux send-keys enter
 tmux select-pane -t 1
 tmux send-keys "source $WS_PATH/devel/setup.bash" C-m
