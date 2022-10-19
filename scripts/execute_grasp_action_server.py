@@ -12,7 +12,7 @@ import tf
 
 
 from grasping_pipeline.msg import ExecuteGraspAction, ExecuteGraspActionResult
-from hsrb_interface import Robot, geometry
+#from hsrb_interface import Robot, geometry
 from std_srvs.srv import Empty
 from visualization_msgs.msg import Marker
 from math import pi
@@ -25,7 +25,7 @@ import open3d as o3d
 from open3d_ros_helper import open3d_ros_helper as orh
 from sensor_msgs.msg import PointCloud2
 import copy
-from placement.msg import *
+#from placement.msg import *
 from geometry_msgs.msg import Pose
 from enum import IntEnum
 
@@ -37,10 +37,10 @@ class CollisionMethod(IntEnum):
 
 class ExecuteGraspServer:
     def __init__(self):
-        self.robot = Robot()
-        self.whole_body = self.robot.try_get('whole_body')
-        self.gripper = self.robot.get('gripper')
-        self.omni_base = self.robot.try_get('omni_base')
+        # self.robot = Robot()
+        # self.whole_body = self.robot.try_get('whole_body')
+        # self.gripper = self.robot.get('gripper')
+        # self.omni_base = self.robot.try_get('omni_base')
         self.tf = tf.TransformListener()
         self.use_map = rospy.get_param('/use_map', False)
 
